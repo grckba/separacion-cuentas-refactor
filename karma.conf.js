@@ -17,7 +17,8 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'webapp/js/*.js',
+      'webapp/js/app.js',
+      'webapp/js/BotonFinalizarCtrl.js',
       'test/*.js' 
     ],
 

@@ -15,6 +15,13 @@ describe("Botón de finalizar proceso", function() {
   });
 
   it("debe estar deshabilitado por defecto", function() {
+    expect($scope.estaHabilitado()).toBeFalsy();
+  });
+
+  it("debe estar habilitado cuando se conteste si se requiere certificado", function() {
+  	spyOn(foo, 'setBar');
+
+  	$scope.requiereCertificado = "SI";
     expect($scope.estaHabilitado()).toBeTruthy();
   });
 });
