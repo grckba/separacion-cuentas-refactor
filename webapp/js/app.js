@@ -1,10 +1,11 @@
-(function() {
-  'use strict';
 
-  angular.module('myApp', [
-    'ui.router'
-  ])
-  .config(function($urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
-  });
-})();
+// declare a module
+var myAppModule = angular.module('myApp', []);
+
+myAppModule.controller('BotonFinalizarCtrl', function BotonFinalizarCtrl($scope) {
+
+	$scope.estaHabilitado = function(){
+		return true;
+	}
+
+});
