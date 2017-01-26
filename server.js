@@ -16,10 +16,10 @@ app.use(function(req, res, next) {
 
 app.use(morgan('dev'));
 
-app.use(express.static(__dirname + '/webapp'));
+app.use(express.static(__dirname + '/src'));
 
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/webapp/views/index.html'));
+  res.sendFile(path.join(__dirname + '/src/views/index.html'));
 });
 
 app.listen(9090);
