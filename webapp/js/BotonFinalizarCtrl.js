@@ -1,8 +1,13 @@
 
-app.controller('BotonFinalizarCtrl', function BotonFinalizarCtrl($scope) {
+app.controller('BotonFinalizarCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+	$scope.habilitado = false;
 
 	$scope.estaHabilitado = function(){
-		return false;
+		return $scope.habilitado;
 	}
 
-});
+	$rootScope.$on('opcionCertificadoSeleccionada', function () {
+        $scope.habilitado = true;
+    });
+
+}]);

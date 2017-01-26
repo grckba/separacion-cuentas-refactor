@@ -12,12 +12,17 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
+    plugins : [
+        'karma-jasmine', 
+        'karma-phantomjs-launcher'
+    ],
 
     // list of files / patterns to load in the browser
     files: [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'webapp/js/app.js',
+      'webapp/js/RespuestaCertificadoCtrl.js',
       'webapp/js/BotonFinalizarCtrl.js',
       'test/*.js' 
     ],
