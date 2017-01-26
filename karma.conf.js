@@ -14,7 +14,8 @@ module.exports = function(config) {
 
     plugins : [
         'karma-jasmine', 
-        'karma-phantomjs-launcher'
+        'karma-phantomjs-launcher',
+        'karma-coverage'
     ],
 
     // list of files / patterns to load in the browser
@@ -36,6 +37,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        'src/*.js' : ['coverage']
     },
 
 

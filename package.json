@@ -9,14 +9,14 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "angular": "^1.6.1",
     "angular-mocks": "^1.6.1",
     "angular-ui-router": "^0.4.2",
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.0",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.2"
   }
